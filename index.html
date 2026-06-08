@@ -9,36 +9,56 @@
 </head>
 <body>
 
-    <!-- HERO -->
-    <div class="hero">
-        <div class="hero-image">
-            <img src="images/shop1.jpg" alt="Rogers Phone">
+    <!-- NAVBAR WITH LOGO -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Rogers Phone" class="logo-img">
+            <span class="logo-text">ROGERS <span class="logo-red">PHONE</span></span>
         </div>
-        <div class="hero-content">
-            <h1>Rogers Phone</h1>
-            <p>Vente de smartphones, iPhone premium, accessoires originaux, réparation professionnelle.</p>
+        <div class="nav-links">
+            <a href="#home">الرئيسية</a>
+            <a href="#gallery">المعرض</a>
+            <a href="#products">المنتجات</a>
+            <a href="#accessories">الإكسسوارات</a>
+            <a href="#contact">اتصل بنا</a>
         </div>
-    </div>
+    </nav>
+
+    <!-- HERO WITH CTA BUTTON -->
+    <section id="home">
+        <div class="hero">
+            <div class="hero-image">
+                <img src="images/shop1.jpg" alt="Rogers Phone">
+            </div>
+            <div class="hero-content">
+                <h1>Rogers Phone</h1>
+                <p>Vente de smartphones, iPhone premium, accessoires originaux, réparation professionnelle.</p>
+                <a href="#contact" class="cta-btn">
+                    <i class="fas fa-shopping-cart"></i> Commandez maintenant
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- GOOGLE REVIEWS -->
     <section class="reviews-bar">
         <div class="review-box">
-            <h3>4.8 ★</h3>
+            <h3>4.8 <i class="fas fa-star"></i></h3>
             <p>84 Avis Google</p>
         </div>
         <div class="review-box">
-            <h3>Service Premium</h3>
+            <h3><i class="fas fa-medal"></i> Service Premium</h3>
             <p>Professionnalisme & Qualité</p>
         </div>
         <div class="review-box">
-            <h3>Ouvert Jusqu'à 23:30</h3>
+            <h3><i class="fas fa-clock"></i> Ouvert Jusqu'à 23:30</h3>
             <p>Disponible tous les jours</p>
         </div>
     </section>
 
     <!-- GALLERY -->
-    <section class="section">
-        <h2>Galerie Photos</h2>
+    <section class="section" id="gallery">
+        <h2><i class="fas fa-store"></i> Galerie Photos</h2>
         <div class="gallery">
             <img src="images/shop1.jpg" alt="Shop">
             <img src="images/shop2.jpg" alt="Shop">
@@ -46,9 +66,9 @@
         </div>
     </section>
 
-    <!-- PRODUITS -->
-    <section class="section">
-        <h2>Nos iPhones</h2>
+    <!-- PRODUCTS -->
+    <section class="section" id="products">
+        <h2><i class="fab fa-apple"></i> Nos iPhones</h2>
         <div class="products-grid">
             <img src="images/product1.jpg" alt="iPhone">
             <img src="images/product2.jpg" alt="iPhone">
@@ -56,48 +76,96 @@
         </div>
     </section>
 
-    <!-- ACCESSOIRES -->
-    <section class="section">
-        <h2>Accessoires Premium</h2>
+    <!-- ACCESSORIES -->
+    <section class="section" id="accessories">
+        <h2><i class="fas fa-headphones"></i> Accessoires Premium</h2>
         <div class="grid">
-            <div class="card">🎧 AirPods</div>
-            <div class="card">🔌 Chargeurs Rapides</div>
-            <div class="card">📱 Verres de Protection</div>
-            <div class="card">🛡️ Coques Premium</div>
+            <div class="card"><i class="fas fa-headphones"></i> 🎧 AirPods</div>
+            <div class="card"><i class="fas fa-bolt"></i> 🔌 Chargeurs Rapides</div>
+            <div class="card"><i class="fas fa-shield-alt"></i> 📱 Verres de Protection</div>
+            <div class="card"><i class="fas fa-mobile-alt"></i> 🛡️ Coques Premium</div>
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section">
-        <h2>Contact</h2>
+    <!-- CONTACT WITH ORIGINAL COLORS -->
+    <section class="section" id="contact">
+        <h2><i class="fas fa-phone-alt"></i> Contact</h2>
         <div class="contact-grid">
-            <a href="tel:+213540124946" class="contact-card phone">📞 0540 12 49 46</a>
-            <a href="https://wa.me/213540124946" class="contact-card whatsapp">🟢 WhatsApp</a>
-            <a href="https://www.facebook.com/share/1BPkRwEnv5/" class="contact-card facebook">📘 Facebook</a>
+            <a href="tel:+213540124946" class="contact-card phone">
+                <i class="fas fa-phone-alt"></i>
+                <span dir="ltr">+213 540 12 49 46</span>
+            </a>
+            <a href="https://wa.me/213540124946" target="_blank" class="contact-card whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp
+            </a>
+            <a href="https://www.facebook.com/share/1BPkRwEnv5/" target="_blank" class="contact-card facebook">
+                <i class="fab fa-facebook-f"></i>
+                Facebook
+            </a>
         </div>
     </section>
 
-    <!-- HORAIRES -->
+    <!-- HOURS -->
     <section class="section">
-        <h2>Horaires</h2>
-        <div class="card">
-            Lundi - Jeudi : 11:00 → 23:30<br><br>
-            Vendredi : 16:00 → 23:30<br><br>
-            Samedi - Dimanche : 11:00 → 23:30
+        <h2><i class="fas fa-calendar-alt"></i> Horaires</h2>
+        <div class="card hours-card">
+            <div class="hours-row"><span>📅 Lundi - Jeudi :</span><span>11:00 → 23:30</span></div>
+            <div class="hours-row"><span>📅 Vendredi :</span><span>16:00 → 23:30</span></div>
+            <div class="hours-row"><span>📅 Samedi - Dimanche :</span><span>11:00 → 23:30</span></div>
         </div>
     </section>
 
-    <!-- ADRESSE + MAPS -->
+    <!-- ADDRESS + INTERACTIVE MAP -->
     <section class="section">
-        <h2>Adresse</h2>
-        <div class="card">
-            📍 16050 Rue Nadjet Slimane, Kouba Alger<br><br>
-            <a href="https://maps.google.com/?q=16050+Rue+Nadjet+Slimane+Kouba+Alger" class="btn">Voir sur Google Maps</a>
+        <h2><i class="fas fa-location-dot"></i> Adresse</h2>
+        <div class="address-container">
+            <div class="card address-card">
+                <p><i class="fas fa-map-pin"></i> 📍 16050 Rue Nadjet Slimane, Kouba Alger</p>
+                <a href="https://maps.google.com/?q=16050+Rue+Nadjet+Slimane+Kouba+Alger" target="_blank" class="btn maps-btn">
+                    <i class="fas fa-map-marked-alt"></i> Voir sur Google Maps
+                </a>
+            </div>
+            <!-- Interactive Google Map -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps?q=16050+Rue+Nadjet+Slimane+Kouba+Alger&output=embed"
+                    width="100%" 
+                    height="300" 
+                    style="border:0; border-radius: 28px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
         </div>
     </section>
 
+    <!-- FOOTER WITH QUICK LINKS -->
     <footer class="footer">
-        <p>© 2025 Rogers Phone — Vente & Réparation iPhone Premium — Alger, Kouba</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Rogers Phone</h4>
+                <p>Vente & Réparation iPhone Premium<br>Alger, Kouba</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens rapides</h4>
+                <a href="#home">Accueil</a>
+                <a href="#gallery">Galerie</a>
+                <a href="#products">Produits</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1BPkRwEnv5/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/213540124946" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="tel:+213540124946"><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Rogers Phone — Tous droits réservés</p>
+        </div>
     </footer>
 
 </body>

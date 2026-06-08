@@ -1,224 +1,172 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogers Phone | متجر iPhone Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
 
-body {
-    background: linear-gradient(180deg, #031630, #071d3b, #0d274d, #031630);
-    color: white;
-    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-    line-height: 1.5;
-    direction: rtl;
-}
+    <!-- NAVBAR WITH LOGO -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Rogers Phone" class="logo-img">
+            <span class="logo-text">ROGERS <span class="logo-red">PHONE</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#home">الرئيسية</a>
+            <a href="#gallery">المعرض</a>
+            <a href="#products">المنتجات</a>
+            <a href="#accessories">الإكسسوارات</a>
+            <a href="#contact">اتصل بنا</a>
+        </div>
+    </nav>
 
-.section {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+    <!-- HERO WITH CTA BUTTON -->
+    <section id="home">
+        <div class="hero">
+            <div class="hero-image">
+                <img src="images/shop1.jpg" alt="Rogers Phone">
+            </div>
+            <div class="hero-content">
+                <h1>Rogers Phone</h1>
+                <p>Vente de smartphones, iPhone premium, accessoires originaux, réparation professionnelle.</p>
+                <a href="#contact" class="cta-btn">
+                    <i class="fas fa-shopping-cart"></i> Commandez maintenant
+                </a>
+            </div>
+        </div>
+    </section>
 
-h2 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 40px;
-    text-align: center;
-    background: linear-gradient(135deg, #fff, #8ba9ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
+    <!-- GOOGLE REVIEWS -->
+    <section class="reviews-bar">
+        <div class="review-box">
+            <h3>4.8 <i class="fas fa-star"></i></h3>
+            <p>84 Avis Google</p>
+        </div>
+        <div class="review-box">
+            <h3><i class="fas fa-medal"></i> Service Premium</h3>
+            <p>Professionnalisme & Qualité</p>
+        </div>
+        <div class="review-box">
+            <h3><i class="fas fa-clock"></i> Ouvert Jusqu'à 23:30</h3>
+            <p>Disponible tous les jours</p>
+        </div>
+    </section>
 
-/* Hero */
-.hero {
-    background: linear-gradient(135deg, rgba(5, 20, 50, 0.92), rgba(180, 20, 30, 0.80));
-    margin: 20px;
-    border-radius: 40px;
-    overflow: hidden;
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
-}
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+        <h2><i class="fas fa-store"></i> Galerie Photos</h2>
+        <div class="gallery">
+            <img src="images/shop1.jpg" alt="Shop">
+            <img src="images/shop2.jpg" alt="Shop">
+            <img src="images/shop3.jpg" alt="Shop">
+        </div>
+    </section>
 
-.hero-image img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    display: block;
-}
+    <!-- PRODUCTS -->
+    <section class="section" id="products">
+        <h2><i class="fab fa-apple"></i> Nos iPhones</h2>
+        <div class="products-grid">
+            <img src="images/product1.jpg" alt="iPhone">
+            <img src="images/product2.jpg" alt="iPhone">
+            <img src="images/product3.jpg" alt="iPhone">
+        </div>
+    </section>
 
-.hero-content {
-    padding: 40px 30px;
-    text-align: center;
-}
+    <!-- ACCESSORIES -->
+    <section class="section" id="accessories">
+        <h2><i class="fas fa-headphones"></i> Accessoires Premium</h2>
+        <div class="grid">
+            <div class="card"><i class="fas fa-headphones"></i> 🎧 AirPods</div>
+            <div class="card"><i class="fas fa-bolt"></i> 🔌 Chargeurs Rapides</div>
+            <div class="card"><i class="fas fa-shield-alt"></i> 📱 Verres de Protection</div>
+            <div class="card"><i class="fas fa-mobile-alt"></i> 🛡️ Coques Premium</div>
+        </div>
+    </section>
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    background: linear-gradient(135deg, #fff, #ffb3b3);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
+    <!-- CONTACT WITH ORIGINAL COLORS -->
+    <section class="section" id="contact">
+        <h2><i class="fas fa-phone-alt"></i> Contact</h2>
+        <div class="contact-grid">
+            <a href="tel:+213540124946" class="contact-card phone">
+                <i class="fas fa-phone-alt"></i>
+                <span dir="ltr">+213 540 12 49 46</span>
+            </a>
+            <a href="https://wa.me/213540124946" target="_blank" class="contact-card whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp
+            </a>
+            <a href="https://www.facebook.com/share/1BPkRwEnv5/" target="_blank" class="contact-card facebook">
+                <i class="fab fa-facebook-f"></i>
+                Facebook
+            </a>
+        </div>
+    </section>
 
-.hero-content p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto;
-}
+    <!-- HOURS -->
+    <section class="section">
+        <h2><i class="fas fa-calendar-alt"></i> Horaires</h2>
+        <div class="card hours-card">
+            <div class="hours-row"><span>📅 Lundi - Jeudi :</span><span>11:00 → 23:30</span></div>
+            <div class="hours-row"><span>📅 Vendredi :</span><span>16:00 → 23:30</span></div>
+            <div class="hours-row"><span>📅 Samedi - Dimanche :</span><span>11:00 → 23:30</span></div>
+        </div>
+    </section>
 
-/* Reviews Bar */
-.reviews-bar {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 20px auto 0;
-    padding: 0 20px;
-}
+    <!-- ADDRESS + INTERACTIVE MAP -->
+    <section class="section">
+        <h2><i class="fas fa-location-dot"></i> Adresse</h2>
+        <div class="address-container">
+            <div class="card address-card">
+                <p><i class="fas fa-map-pin"></i> 📍 16050 Rue Nadjet Slimane, Kouba Alger</p>
+                <a href="https://maps.google.com/?q=16050+Rue+Nadjet+Slimane+Kouba+Alger" target="_blank" class="btn maps-btn">
+                    <i class="fas fa-map-marked-alt"></i> Voir sur Google Maps
+                </a>
+            </div>
+            <!-- Interactive Google Map -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps?q=16050+Rue+Nadjet+Slimane+Kouba+Alger&output=embed"
+                    width="100%" 
+                    height="300" 
+                    style="border:0; border-radius: 28px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
 
-.review-box {
-    background: linear-gradient(145deg, #163b72, #0b1f3e);
-    padding: 20px 30px;
-    border-radius: 20px;
-    text-align: center;
-    flex: 1;
-    min-width: 180px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
-}
+    <!-- FOOTER WITH QUICK LINKS -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Rogers Phone</h4>
+                <p>Vente & Réparation iPhone Premium<br>Alger, Kouba</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens rapides</h4>
+                <a href="#home">Accueil</a>
+                <a href="#gallery">Galerie</a>
+                <a href="#products">Produits</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1BPkRwEnv5/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/213540124946" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="tel:+213540124946"><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Rogers Phone — Tous droits réservés</p>
+        </div>
+    </footer>
 
-.review-box:hover {
-    transform: translateY(-5px);
-    border-color: #3b82f6;
-}
-
-.review-box h3 {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-}
-
-/* Gallery & Products */
-.gallery, .products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.gallery img, .products-grid img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
-    transition: 0.3s;
-}
-
-.gallery img:hover, .products-grid img:hover {
-    transform: scale(1.04);
-}
-
-/* Grid Accessories */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px;
-}
-
-.card {
-    background: linear-gradient(145deg, #0e2245, #14376b);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 28px;
-    padding: 30px 20px;
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: 500;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-6px);
-    background: linear-gradient(145deg, #1a3e77, #1c4888);
-}
-
-/* Contact */
-.contact-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.contact-card {
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: white;
-    transition: 0.3s;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.contact-card:hover {
-    transform: translateY(-3px);
-    filter: brightness(1.05);
-}
-
-.phone { background: #dc2626; }
-.whatsapp { background: #25D366; }
-.facebook { background: #1877F2; }
-
-/* Button */
-.btn {
-    display: inline-block;
-    background: linear-gradient(135deg, #2563eb, #1e40af);
-    padding: 12px 25px;
-    border-radius: 40px;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
-    transform: scale(1.02);
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 40px 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 30px;
-    font-size: 0.85rem;
-    opacity: 0.8;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hero-image img {
-        height: 280px;
-    }
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 1.6rem;
-    }
-    .section {
-        padding: 40px 15px;
-    }
-    .review-box {
-        padding: 15px;
-    }
-    .contact-card {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-}
+</body>
+</html>

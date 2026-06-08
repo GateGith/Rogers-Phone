@@ -281,47 +281,97 @@ h2 {
     gap: 35px;
 }
 
-.products-grid img {
+.product-card {
+    background: linear-gradient(145deg, #0e2245, #082045);
+    border-radius: 28px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5);
+}
+
+.product-card img {
     width: 100%;
-    height: 320px;
+    height: 280px;
     object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
-    transition: 0.3s;
+    transition: transform 0.5s ease;
 }
 
-.products-grid img:hover {
-    transform: scale(1.04);
+.product-card:hover img {
+    transform: scale(1.05);
 }
 
-/* Grid Accessories */
-.grid {
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    color: #8ba9ff;
+    font-size: 0.9rem;
+}
+
+/* Accessories Grid with Images */
+.accessories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
 }
 
-.card {
+.accessory-card {
     background: linear-gradient(145deg, #0e2245, #14376b);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 28px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
-    border-radius: 32px;
-    padding: 35px 20px;
+}
+
+.accessory-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(59, 130, 246, 0.2);
+}
+
+.accessory-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.accessory-card:hover img {
+    transform: scale(1.05);
+}
+
+.accessory-info {
+    padding: 20px;
     text-align: center;
-    transition: all 0.3s ease;
-    font-size: 1.2rem;
-    font-weight: 500;
 }
 
-.card i {
+.accessory-info i {
     font-size: 2rem;
-    margin-left: 10px;
     color: #3b82f6;
+    margin-bottom: 10px;
+    display: block;
 }
 
-.card:hover {
-    transform: translateY(-8px);
-    background: linear-gradient(145deg, #1a3e77, #1c4888);
+.accessory-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.accessory-info p {
+    color: #8ba9ff;
+    font-size: 0.85rem;
 }
 
 /* Hours Card */

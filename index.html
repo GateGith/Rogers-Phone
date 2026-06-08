@@ -10,7 +10,10 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo">ROGERS <span>PHONE</span></div>
+        <div class="logo">
+            <img src="images/logo.png" alt="Rogers Phone" class="logo-img">
+            ROGERS <span>PHONE</span>
+        </div>
         <div class="nav-links">
             <a href="#home">الرئيسية</a>
             <a href="#gallery">المعرض</a>
@@ -20,10 +23,11 @@
         </div>
     </nav>
 
+    <!-- HERO -->
     <section id="home">
         <div class="hero">
             <div class="hero-image">
-                <img src="images/shop1.jpg" alt="Rogers Phone - متجر بريميوم">
+                <img src="images/shop1.jpg" alt="Rogers Phone">
             </div>
             <div class="hero-content">
                 <h1>Rogers Phone</h1>
@@ -32,7 +36,7 @@
         </div>
     </section>
 
-    <!-- Google Reviews Bar -->
+    <!-- GOOGLE REVIEWS + CLIENTS -->
     <div class="container">
         <div class="reviews-bar">
             <div class="review-box">
@@ -48,132 +52,119 @@
                 <p>Disponible tous les jours</p>
             </div>
         </div>
+
+        <!-- CLIENTS REVIEWS -->
+        <div class="clients-section">
+            <h2><i class="fas fa-users"></i> آراء عملائنا</h2>
+            <div class="clients-grid">
+                <div class="client-card">
+                    <img src="images/client1.jpg" alt="عميل">
+                    <div class="client-review">
+                        <i class="fas fa-quote-right"></i>
+                        <p>خدمة ممتازة ومنتج أصلي 100%</p>
+                        <div class="stars">★★★★★</div>
+                        <span>- Mohamed</span>
+                    </div>
+                </div>
+                <div class="client-card">
+                    <img src="images/client2.jpg" alt="عميلة">
+                    <div class="client-review">
+                        <i class="fas fa-quote-right"></i>
+                        <p>أفضل متجر آيفون في الجزائر</p>
+                        <div class="stars">★★★★★</div>
+                        <span>- Sarah</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Gallery Section -->
+    <!-- GALLERY -->
     <section class="section" id="gallery">
-        <h2><i class="fas fa-store"></i> معرض المحل</h2>
+        <h2><i class="fas fa-store"></i> Galerie Photos</h2>
         <div class="gallery">
-            <div class="gallery-item">
-                <img src="images/shop1.jpg" alt="واجهة المتجر">
-                <div class="overlay">واجهة المتجر</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/shop2.jpg" alt="داخل المتجر">
-                <div class="overlay">صالة العرض</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/shop3.jpg" alt="منطقة الخدمة">
-                <div class="overlay">خدمة العملاء</div>
-            </div>
+            <img src="images/shop1.jpg" alt="واجهة المحل">
+            <img src="images/shop2.jpg" alt="داخل المحل">
+            <img src="images/shop3.jpg" alt="منطقة الخدمة">
         </div>
     </section>
 
-    <!-- Products Section -->
+    <!-- PRODUITS / NOS iPHONES -->
     <section class="section" id="products">
-        <h2><i class="fab fa-apple"></i> Nos iPhones Premium</h2>
+        <h2><i class="fab fa-apple"></i> Nos iPhones</h2>
         <div class="products-grid">
-            <div class="product-card">
-                <img src="images/product1.jpg" alt="iPhone 15 Pro Max">
-                <div class="product-info">
-                    <h3>iPhone 15 Pro Max</h3>
-                    <p>256GB • Titanium</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="images/product2.jpg" alt="iPhone 15 Pro">
-                <div class="product-info">
-                    <h3>iPhone 15 Pro</h3>
-                    <p>128GB • Noir</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="images/product3.jpg" alt="iPhone 14 Pro">
-                <div class="product-info">
-                    <h3>iPhone 14 Pro</h3>
-                    <p>256GB • Deep Purple</p>
-                </div>
-            </div>
+            <img src="images/product1.jpg" alt="iPhone">
+            <img src="images/product2.jpg" alt="iPhone">
+            <img src="images/product3.jpg" alt="iPhone">
         </div>
     </section>
 
-    <!-- Accessories -->
+    <!-- ACCESSOIRES -->
     <section class="section" id="accessories">
         <h2><i class="fas fa-headphones"></i> Accessoires Premium</h2>
         <div class="grid">
             <div class="card">
                 <i class="fas fa-headphones"></i>
-                <h3>AirPods</h3>
-                <p>Originaux • Garantie 1 an</p>
+                🎧 AirPods
             </div>
             <div class="card">
                 <i class="fas fa-bolt"></i>
-                <h3>Chargeurs Rapides</h3>
-                <p>35W • USB-C</p>
+                🔌 Chargeurs Rapides
             </div>
             <div class="card">
                 <i class="fas fa-shield-alt"></i>
-                <h3>Verres de Protection</h3>
-                <p>9H • Ultra résistant</p>
+                📱 Verres de Protection
             </div>
             <div class="card">
                 <i class="fas fa-mobile-alt"></i>
-                <h3>Coques Premium</h3>
-                <p>Silicone • Cuir</p>
+                🛡️ Coques Premium
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- CONTACT -->
     <section class="section" id="contact">
         <h2><i class="fas fa-phone-alt"></i> Contact</h2>
         <div class="contact-grid">
             <a href="tel:+213540124946" class="contact-card phone">
                 <i class="fas fa-phone-alt"></i>
-                <span dir="ltr">+213 540 12 49 46</span>
+                <span dir="ltr">📞 0540 12 49 46</span>
             </a>
             <a href="https://wa.me/213540124946" target="_blank" class="contact-card whatsapp">
                 <i class="fab fa-whatsapp"></i>
-                WhatsApp
+                🟢 WhatsApp
             </a>
             <a href="https://www.facebook.com/share/1BPkRwEnv5/" target="_blank" class="contact-card facebook">
                 <i class="fab fa-facebook-f"></i>
                 Facebook
             </a>
-            <a href="https://maps.google.com/?q=16050+Rue+Nadjet+Slimane+Kouba+Alger" target="_blank" class="contact-card maps">
-                <i class="fas fa-map-marker-alt"></i>
-                Google Maps
-            </a>
         </div>
     </section>
 
-    <!-- Horaires -->
+    <!-- HORAIRES -->
     <section class="section">
         <h2><i class="fas fa-calendar-alt"></i> Horaires</h2>
-        <div class="hours-card">
+        <div class="card hours-card">
             <div class="hours-row">
-                <span><i class="fas fa-calendar-day"></i> Lundi - Jeudi :</span>
+                <span>📅 Lundi - Jeudi :</span>
                 <span>11:00 → 23:30</span>
             </div>
             <div class="hours-row">
-                <span><i class="fas fa-calendar-day"></i> Vendredi :</span>
+                <span>📅 Vendredi :</span>
                 <span>16:00 → 23:30</span>
             </div>
             <div class="hours-row">
-                <span><i class="fas fa-calendar-weekend"></i> Samedi - Dimanche :</span>
+                <span>📅 Samedi - Dimanche :</span>
                 <span>11:00 → 23:30</span>
-            </div>
-            <div class="hours-badge">
-                <i class="fas fa-check-circle"></i> Ouvert tous les jours
             </div>
         </div>
     </section>
 
-    <!-- Adresse + Maps -->
+    <!-- GOOGLE MAPS -->
     <section class="section">
         <h2><i class="fas fa-location-dot"></i> Adresse</h2>
-        <div class="address-card">
-            <p><i class="fas fa-map-pin"></i> 16050 Rue Nadjet Slimane, Kouba Alger</p>
+        <div class="card address-card">
+            <p><i class="fas fa-map-pin"></i> 📍 16050 Rue Nadjet Slimane, Kouba Alger</p>
             <a href="https://maps.google.com/?q=16050+Rue+Nadjet+Slimane+Kouba+Alger" target="_blank" class="btn maps-btn">
                 <i class="fas fa-map-marked-alt"></i> Voir sur Google Maps
             </a>

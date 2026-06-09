@@ -2,14 +2,21 @@
 <html lang="fr" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Rogers Phone - Spécialiste iPhone à Kouba Alger. Vente, réparation et accessoires premium iPhone. Service professionnel 7j/7 jusqu'à 23h30.">
-    <meta name="keywords" content="iPhone, réparation iPhone, vente iPhone, accessoires iPhone, Alger, Kouba">
     <title>Rogers Phone | Spécialiste iPhone à Kouba - Vente & Réparation</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
+    <!-- HEADER AVEC LOGO -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Rogers Phone" class="logo-img">
+            <span class="logo-text">ROGERS <span class="logo-red">PHONE</span></span>
+        </div>
+    </header>
 
     <!-- HERO SECTION -->
     <section class="hero">
@@ -66,41 +73,79 @@
         </div>
     </section>
 
-    <!-- RÉPARATION PROFESSIONNELLE -->
+    <!-- RÉPARATION PROFESSIONNELLE AVEC IMAGES -->
     <section class="section">
         <h2><i class="fas fa-screwdriver-wrench"></i> Réparation Professionnelle</h2>
-        <div class="grid">
-            <div class="card">📱 Changement d'écran</div>
-            <div class="card">🔋 Remplacement batterie</div>
-            <div class="card">⚡ Connecteur de charge</div>
-            <div class="card">💧 Diagnostic complet</div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>Changement d'écran</h3>
+                <p>Rapide et professionnel</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔋</div>
+                <h3>Remplacement batterie</h3>
+                <p>Batterie d'origine</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚡</div>
+                <h3>Connecteur de charge</h3>
+                <p>Réparation en 1h</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💧</div>
+                <h3>Diagnostic complet</h3>
+                <p>Gratuit et sans engagement</p>
+            </div>
         </div>
     </section>
 
-    <!-- ACCESSOIRES PREMIUM -->
+    <!-- ACCESSOIRES PREMIUM AVEC IMAGES -->
     <section class="section">
         <h2><i class="fas fa-headphones"></i> Accessoires Premium</h2>
-        <div class="grid">
-            <div class="card">🎧 AirPods Originaux</div>
-            <div class="card">🔌 Chargeurs Rapides 35W</div>
-            <div class="card">🛡️ Coques Premium</div>
-            <div class="card">📱 Verres de Protection 9H</div>
+        <div class="accessories-grid">
+            <div class="accessory-card">
+                <img src="images/airpods.jpg" alt="AirPods" class="accessory-img">
+                <div class="accessory-icon">🎧</div>
+                <h3>AirPods Originaux</h3>
+                <p>Garantie 1 an</p>
+            </div>
+            <div class="accessory-card">
+                <img src="images/chargeur.jpg" alt="Chargeur" class="accessory-img">
+                <div class="accessory-icon">🔌</div>
+                <h3>Chargeurs Rapides 35W</h3>
+                <p>USB-C PD</p>
+            </div>
+            <div class="accessory-card">
+                <img src="images/coque.jpg" alt="Coque" class="accessory-img">
+                <div class="accessory-icon">🛡️</div>
+                <h3>Coques Premium</h3>
+                <p>Silicone & Cuir</p>
+            </div>
+            <div class="accessory-card">
+                <img src="images/protection.jpg" alt="Protection" class="accessory-img">
+                <div class="accessory-icon">📱</div>
+                <h3>Verres de Protection 9H</h3>
+                <p>Ultra résistant</p>
+            </div>
         </div>
     </section>
 
-    <!-- AVIS CLIENTS GOOGLE REVIEWS -->
+    <!-- AVIS CLIENTS AVEC IMAGES -->
     <section class="section">
         <h2>⭐ Avis Clients</h2>
-        <div class="grid">
-            <div class="card review-card">
+        <div class="reviews-grid">
+            <div class="review-card">
+                <img src="images/client1.jpg" alt="Athmane Badaoui" class="client-img">
                 <div class="stars">★★★★★</div>
                 <p>"A serious and professional team. High-quality products and impeccable service."</p>
-                <p class="review-author">— Athmane Badaoui</p>
+                <h4>— Athmane Badaoui</h4>
             </div>
-            <div class="card review-card">
+            <div class="review-card">
+                <img src="images/client2.jpg" alt="Belaid TAMADARTAZA" class="client-img">
                 <div class="stars">★★★★★</div>
                 <p>"Merci pour l'excellent service et le professionnalisme."</p>
-                <p class="review-author">— Belaid TAMADARTAZA</p>
+                <h4>— Belaid TAMADARTAZA</h4>
             </div>
         </div>
     </section>
@@ -144,6 +189,7 @@
             <a href="tel:+213540124946" class="contact-btn phone"><i class="fas fa-phone-alt"></i> Appeler</a>
             <a href="https://wa.me/213540124946" target="_blank" class="contact-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
             <a href="https://www.facebook.com/share/1BPkRwEnv5/" target="_blank" class="contact-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank" class="contact-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
             <a href="https://maps.google.com/?q=16050+Rue+Nadjet+Slimane+Kouba+Alger" target="_blank" class="contact-btn maps"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
         </div>
     </section>
@@ -151,9 +197,18 @@
     <!-- FOOTER -->
     <footer>
         <div class="footer-content">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Rogers Phone" class="footer-logo">
+            </div>
             <h3>Rogers Phone</h3>
             <p>Vente & Réparation iPhone Premium</p>
             <p>Kouba - Alger</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/share/1BPkRwEnv5/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/213540124946" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="tel:+213540124946"><i class="fas fa-phone-alt"></i></a>
+            </div>
             <p class="copyright">© 2025 Rogers Phone — Tous droits réservés</p>
         </div>
     </footer>

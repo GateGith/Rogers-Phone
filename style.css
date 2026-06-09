@@ -8,13 +8,13 @@ body {
     background: linear-gradient(180deg, #031630, #071d3b, #0d274d);
     color: white;
     font-family: 'Segoe UI', system-ui, -apple-system, 'Roboto', sans-serif;
-    direction: rtl;
+    direction: ltr;
 }
 
-/* ========== HERO PLEINE LARGEUR ========== */
+/* ========== HERO SECTION ========== */
 .hero {
     position: relative;
-    min-height: 90vh;
+    min-height: 85vh;
     background: url('images/shop1.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(5,20,50,0.85), rgba(180,20,30,0.75));
+    background: linear-gradient(135deg, rgba(5,20,50,0.88), rgba(180,20,30,0.82));
 }
 
 .hero-content {
@@ -40,49 +40,47 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     background: linear-gradient(135deg, #fff, #ffb3b3);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
-.subtitle {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
     opacity: 0.95;
-}
-
-.hero-tags {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 25px;
-}
-
-.hero-tags span {
-    background: rgba(255,255,255,0.15);
-    padding: 8px 18px;
-    border-radius: 40px;
-    font-size: 0.9rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-stats {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 40px;
     flex-wrap: wrap;
     margin-bottom: 35px;
-    font-size: 0.9rem;
 }
 
-.hero-stats span {
+.hero-stats div {
     background: rgba(0,0,0,0.5);
-    padding: 6px 15px;
-    border-radius: 30px;
+    padding: 12px 25px;
+    border-radius: 40px;
+    backdrop-filter: blur(8px);
+}
+
+.hero-stats h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.hero-stats p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
 }
 
 .hero-buttons {
@@ -107,79 +105,45 @@ body {
 
 .btn-whatsapp {
     background: #25D366;
-    box-shadow: 0 8px 20px rgba(37,211,102,0.4);
+    box-shadow: 0 8px 25px rgba(37,211,102,0.4);
 }
 
 .btn-call {
     background: #dc2626;
-    box-shadow: 0 8px 20px rgba(220,38,38,0.4);
+    box-shadow: 0 8px 25px rgba(220,38,38,0.4);
 }
 
 .btn-whatsapp:hover, .btn-call:hover {
     transform: scale(1.05);
 }
 
-/* ========== STATS ========== */
-.stats {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-    padding: 50px 20px;
+/* ========== TRUST BAR ========== */
+.trust-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 30px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.stat-card {
-    background: linear-gradient(145deg, #163b72, #0b1f3e);
-    padding: 25px 35px;
-    border-radius: 24px;
+.trust-bar div {
+    background: linear-gradient(135deg, #14376b, #0e2245);
+    padding: 18px;
+    border-radius: 18px;
     text-align: center;
-    flex: 1;
-    min-width: 180px;
+    font-weight: 700;
     border: 1px solid rgba(255,255,255,0.1);
     transition: 0.3s;
 }
 
-.stat-card:hover {
-    transform: translateY(-5px);
+.trust-bar div:hover {
+    transform: translateY(-3px);
     border-color: #3b82f6;
 }
 
-.stat-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-}
-
-/* ========== GALERIE PLEINE LARGEUR ========== */
-.gallery-full {
-    padding: 40px 20px;
-    background: rgba(0,0,0,0.2);
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 24px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-    transition: 0.3s;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.02);
-}
-
-/* ========== PRODUITS ========== */
-.products, .services, .reviews, .address, .contact {
+/* ========== SECTIONS ========== */
+.section {
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -196,6 +160,32 @@ h2 {
     color: transparent;
 }
 
+h2 i {
+    margin-right: 10px;
+}
+
+/* ========== GALLERY & PRODUCTS 3D EFFECT ========== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.gallery img, .products-grid img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.4);
+    transition: 0.4s;
+    transform-style: preserve-3d;
+}
+
+.gallery img:hover, .products-grid img:hover {
+    transform: perspective(1000px) rotateY(-8deg) translateY(-8px) scale(1.04);
+    box-shadow: 0 30px 45px rgba(0,0,0,0.5);
+}
+
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -203,82 +193,69 @@ h2 {
 }
 
 .products-grid img {
-    width: 100%;
     height: 320px;
-    object-fit: cover;
-    border-radius: 24px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-    transition: 0.3s;
 }
 
-.products-grid img:hover {
-    transform: scale(1.03);
-}
-
-/* ========== SERVICES ========== */
-.services-grid {
+/* ========== GRID & CARDS ========== */
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
-.service-card {
+.card {
     background: linear-gradient(145deg, #0e2245, #14376b);
     border: 1px solid rgba(255,255,255,0.1);
-    padding: 25px 15px;
+    border-radius: 28px;
+    padding: 30px 20px;
     text-align: center;
-    border-radius: 24px;
     font-size: 1.1rem;
     font-weight: 500;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
     transition: 0.3s;
 }
 
-.service-card:hover {
+.card:hover {
     transform: translateY(-6px);
     background: linear-gradient(145deg, #1a3e77, #1c4888);
 }
 
-/* ========== AVIS CLIENTS ========== */
-.reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+.review-card p {
+    margin: 15px 0;
+    font-style: italic;
+    line-height: 1.5;
 }
 
-.review-card {
-    background: linear-gradient(145deg, #0e2245, #14376b);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 28px;
-    padding: 30px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.review-card:hover {
-    transform: translateY(-5px);
-}
-
-.review-card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 3px solid #3b82f6;
+.review-author {
+    font-weight: bold;
+    color: #8ba9ff;
+    font-style: normal;
 }
 
 .stars {
     color: #fbbf24;
     font-size: 1.3rem;
-    margin-bottom: 15px;
+    letter-spacing: 3px;
 }
 
-.review-card p {
-    font-size: 1rem;
-    line-height: 1.5;
+/* ========== HOURS CARD ========== */
+.hours-card {
+    background: linear-gradient(145deg, #0e2245, #14376b);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 28px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-/* ========== ADRESSE ========== */
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ========== ADDRESS & MAP ========== */
 .address-card {
     background: linear-gradient(145deg, #0e2245, #14376b);
     border: 1px solid rgba(255,255,255,0.1);
@@ -286,12 +263,20 @@ h2 {
     padding: 35px;
     text-align: center;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 25px auto;
 }
 
 .address-card p {
     margin-bottom: 15px;
     font-size: 1.1rem;
+}
+
+.map-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
 
 .map-btn {
@@ -311,7 +296,7 @@ h2 {
     background: linear-gradient(135deg, #3b82f6, #1e3a8a);
 }
 
-/* ========== CONTACT 4 BOUTONS ========== */
+/* ========== CONTACT BUTTONS ========== */
 .contact-buttons {
     display: flex;
     justify-content: center;
@@ -343,6 +328,39 @@ h2 {
 .facebook { background: #1877F2; }
 .maps { background: #ea4335; }
 
+/* ========== FLOATING BUTTONS ========== */
+.floating-whatsapp,
+.floating-call {
+    position: fixed;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+    z-index: 9999;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.floating-whatsapp {
+    bottom: 20px;
+    background: #25D366;
+}
+
+.floating-call {
+    bottom: 95px;
+    background: #ef4444;
+}
+
+.floating-whatsapp:hover, .floating-call:hover {
+    transform: scale(1.1);
+}
+
 /* ========== FOOTER ========== */
 footer {
     background: rgba(3, 22, 48, 0.95);
@@ -368,19 +386,27 @@ footer {
     font-size: 0.8rem;
     opacity: 0.6;
 }
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
     }
     
-    .subtitle {
+    .hero-content p {
         font-size: 1rem;
     }
     
-    .hero-tags span, .hero-stats span {
-        font-size: 0.7rem;
-        padding: 5px 12px;
+    .hero-stats {
+        gap: 15px;
+    }
+    
+    .hero-stats div {
+        padding: 8px 15px;
+    }
+    
+    .hero-stats h3 {
+        font-size: 1.1rem;
     }
     
     .btn-whatsapp, .btn-call {
@@ -388,28 +414,27 @@ footer {
         font-size: 0.9rem;
     }
     
-    .stat-card {
-        padding: 15px 20px;
-    }
-    
-    .stat-card h3 {
-        font-size: 1.2rem;
-    }
-    
     h2 {
         font-size: 1.5rem;
     }
     
-    .gallery-grid img {
-        height: 200px;
-    }
-    
-    .products-grid img {
-        height: 240px;
+    .gallery img, .products-grid img {
+        height: 220px;
     }
     
     .contact-btn {
         padding: 12px 20px;
         font-size: 0.85rem;
+    }
+    
+    .floating-whatsapp, .floating-call {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        right: 15px;
+    }
+    
+    .floating-call {
+        bottom: 80px;
     }
 }

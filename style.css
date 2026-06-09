@@ -9,6 +9,46 @@ body {
     color: white;
     font-family: 'Segoe UI', system-ui, -apple-system, 'Roboto', sans-serif;
     direction: ltr;
+    text-align: center;
+}
+
+/* ========== HEADER WITH LOGO ========== */
+.header {
+    padding: 20px;
+    background: rgba(3, 22, 48, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 1.6rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #fff, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.logo-red {
+    color: #ef4444;
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
 }
 
 /* ========== HERO SECTION ========== */
@@ -28,7 +68,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(5,20,50,0.88), rgba(180,20,30,0.82));
+    background: linear-gradient(135deg, rgba(5, 20, 50, 0.88), rgba(180, 20, 30, 0.82));
 }
 
 .hero-content {
@@ -67,7 +107,7 @@ body {
 }
 
 .hero-stats div {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     padding: 12px 25px;
     border-radius: 40px;
     backdrop-filter: blur(8px);
@@ -105,12 +145,12 @@ body {
 
 .btn-whatsapp {
     background: #25D366;
-    box-shadow: 0 8px 25px rgba(37,211,102,0.4);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
 }
 
 .btn-call {
     background: #dc2626;
-    box-shadow: 0 8px 25px rgba(220,38,38,0.4);
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);
 }
 
 .btn-whatsapp:hover, .btn-call:hover {
@@ -119,22 +159,23 @@ body {
 
 /* ========== TRUST BAR ========== */
 .trust-bar {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-    padding: 30px 20px;
-    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .trust-bar div {
     background: linear-gradient(135deg, #14376b, #0e2245);
-    padding: 18px;
+    padding: 15px 25px;
     border-radius: 18px;
-    text-align: center;
     font-weight: 700;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: 0.3s;
+    min-width: 180px;
 }
 
 .trust-bar div:hover {
@@ -147,6 +188,7 @@ body {
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 h2 {
@@ -166,82 +208,177 @@ h2 i {
 
 /* ========== GALLERY & PRODUCTS 3D EFFECT ========== */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 25px;
 }
 
 .gallery img, .products-grid img {
-    width: 100%;
+    width: 320px;
     height: 280px;
     object-fit: cover;
     border-radius: 24px;
-    box-shadow: 0 20px 35px rgba(0,0,0,0.4);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
     transition: 0.4s;
     transform-style: preserve-3d;
 }
 
 .gallery img:hover, .products-grid img:hover {
     transform: perspective(1000px) rotateY(-8deg) translateY(-8px) scale(1.04);
-    box-shadow: 0 30px 45px rgba(0,0,0,0.5);
+    box-shadow: 0 30px 45px rgba(0, 0, 0, 0.5);
 }
 
 .products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .products-grid img {
+    width: 320px;
     height: 320px;
 }
 
-/* ========== GRID & CARDS ========== */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+/* ========== SERVICES GRID ========== */
+.services-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 25px;
 }
 
-.card {
+.service-card {
     background: linear-gradient(145deg, #0e2245, #14376b);
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 28px;
-    padding: 30px 20px;
+    padding: 30px 25px;
     text-align: center;
-    font-size: 1.1rem;
-    font-weight: 500;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    width: 240px;
     transition: 0.3s;
 }
 
-.card:hover {
+.service-card:hover {
     transform: translateY(-6px);
     background: linear-gradient(145deg, #1a3e77, #1c4888);
 }
 
-.review-card p {
-    margin: 15px 0;
-    font-style: italic;
-    line-height: 1.5;
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
 }
 
-.review-author {
-    font-weight: bold;
-    color: #8ba9ff;
-    font-style: normal;
+.service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.service-card p {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* ========== ACCESSORIES GRID WITH IMAGES ========== */
+.accessories-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.accessory-card {
+    background: linear-gradient(145deg, #0e2245, #14376b);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 28px;
+    padding: 25px;
+    text-align: center;
+    width: 240px;
+    transition: 0.3s;
+}
+
+.accessory-card:hover {
+    transform: translateY(-6px);
+    background: linear-gradient(145deg, #1a3e77, #1c4888);
+}
+
+.accessory-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.accessory-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.accessory-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.accessory-card p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* ========== REVIEWS GRID WITH CLIENT IMAGES ========== */
+.reviews-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.review-card {
+    background: linear-gradient(145deg, #0e2245, #14376b);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 28px;
+    padding: 35px;
+    text-align: center;
+    width: 380px;
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.client-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #3b82f6;
 }
 
 .stars {
     color: #fbbf24;
     font-size: 1.3rem;
     letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.review-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.review-card h4 {
+    color: #8ba9ff;
+    font-size: 0.9rem;
 }
 
 /* ========== HOURS CARD ========== */
 .hours-card {
     background: linear-gradient(145deg, #0e2245, #14376b);
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 28px;
     padding: 30px;
     max-width: 500px;
@@ -252,13 +389,13 @@ h2 i {
     display: flex;
     justify-content: space-between;
     padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* ========== ADDRESS & MAP ========== */
 .address-card {
     background: linear-gradient(145deg, #0e2245, #14376b);
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 28px;
     padding: 35px;
     text-align: center;
@@ -276,7 +413,7 @@ h2 i {
     margin: 0 auto;
     border-radius: 28px;
     overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
 .map-btn {
@@ -300,8 +437,8 @@ h2 i {
 .contact-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .contact-btn {
@@ -315,7 +452,7 @@ h2 i {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .contact-btn:hover {
@@ -326,6 +463,7 @@ h2 i {
 .phone { background: #dc2626; }
 .whatsapp { background: #25D366; }
 .facebook { background: #1877F2; }
+.instagram { background: radial-gradient(circle at 30% 110%, #ffdb8c, #feda77, #e1306c, #c13584, #833ab4, #5851db, #405de6); }
 .maps { background: #ea4335; }
 
 /* ========== FLOATING BUTTONS ========== */
@@ -342,7 +480,7 @@ h2 i {
     font-size: 28px;
     color: white;
     z-index: 9999;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
     text-decoration: none;
 }
@@ -364,10 +502,22 @@ h2 i {
 /* ========== FOOTER ========== */
 footer {
     background: rgba(3, 22, 48, 0.95);
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 50px;
     padding: 40px 20px;
     text-align: center;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
 }
 
 .footer-content h3 {
@@ -379,6 +529,35 @@ footer {
 .footer-content p {
     opacity: 0.8;
     margin-bottom: 8px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.footer-social a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: white;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.footer-social a:nth-child(1) { background: #1877F2; }
+.footer-social a:nth-child(2) { background: #25D366; }
+.footer-social a:nth-child(3) { background: radial-gradient(circle at 30% 110%, #ffdb8c, #e1306c, #c13584, #833ab4); }
+.footer-social a:nth-child(4) { background: #dc2626; }
+
+.footer-social a:hover {
+    transform: translateY(-5px);
 }
 
 .copyright {
@@ -419,7 +598,19 @@ footer {
     }
     
     .gallery img, .products-grid img {
+        width: 100%;
+        max-width: 320px;
         height: 220px;
+    }
+    
+    .service-card, .accessory-card {
+        width: 180px;
+        padding: 20px;
+    }
+    
+    .review-card {
+        width: 100%;
+        max-width: 350px;
     }
     
     .contact-btn {
@@ -436,5 +627,15 @@ footer {
     
     .floating-call {
         bottom: 80px;
+    }
+    
+    .hours-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .trust-bar div {
+        min-width: 160px;
+        padding: 12px 18px;
     }
 }

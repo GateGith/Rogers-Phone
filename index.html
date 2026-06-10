@@ -159,33 +159,36 @@
             <div class="hours-row"><span>📅 Samedi - Dimanche :</span><span>11:00 → 23:30</span></div>
         </div>
     </section>
-
-  <!-- ADRESSE + GOOGLE MAPS + SHOP IMAGE -->
+<!-- ADRESSE + GOOGLE MAPS + SHOP IMAGE -->
 <section class="section">
     <h2><i class="fas fa-map-marker-alt"></i> Notre Adresse</h2>
     
-    <!-- صورة المحل كاملة -->
-    <div class="shop-image-container">
-        <img src="images/shop1.jpg" alt="Rogers Phone Magasin - Vue complète" class="shop-full-image">
-        <p class="image-caption">Notre magasin à Kouba - Alger</p>
-    </div>
-    
-    <div class="address-card">
-        <p>📍 16050 Rue Nadjet Slimane, Kouba Alger</p>
-        <p>📞 <span dir="ltr">+213 540 12 49 46</span></p>
-        <a href="https://maps.google.com/?q=16050+Rue+Nadjet+Slimane+Kouba+Alger" target="_blank" class="map-btn">
-            <i class="fas fa-map-marked-alt"></i> Ouvrir sur Google Maps
-        </a>
-    </div>
-    <div class="map-container">
-        <iframe 
-            src="https://www.google.com/maps?q=16050+Rue+Nadjet+Slimane+Kouba+Alger&output=embed"
-            width="100%" 
-            height="300" 
-            style="border:0; border-radius: 24px;" 
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
+    <!-- صورة المحل داخل اطار مع location -->
+    <div class="address-wrapper">
+        <div class="shop-location-card">
+            <div class="location-header">
+                <i class="fas fa-store"></i>
+                <h3>Notre Magasin</h3>
+            </div>
+            <img src="images/shop1.jpg" alt="Rogers Phone Magasin" class="shop-address-image">
+            <div class="location-details">
+                <p><i class="fas fa-map-pin"></i> 16050 Rue Nadjet Slimane, Kouba Alger</p>
+                <p><i class="fas fa-phone-alt"></i> <span dir="ltr">+213 540 12 49 46</span></p>
+                <a href="https://maps.google.com/?q=16050+Rue+Nadjet+Slimane+Kouba+Alger" target="_blank" class="map-small-btn">
+                    <i class="fas fa-map-marked-alt"></i> Ouvrir sur Google Maps
+                </a>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps?q=16050+Rue+Nadjet+Slimane+Kouba+Alger&output=embed"
+                width="100%" 
+                height="300" 
+                style="border:0; border-radius: 24px;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
     </div>
 </section>
 

@@ -392,45 +392,131 @@ h2 i {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* ========== ADDRESS & MAP ========== */
-.address-card {
+/* ========== ADDRESS WITH SHOP IMAGE ========== */
+.address-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.shop-location-card {
     background: linear-gradient(145deg, #0e2245, #14376b);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 28px;
-    padding: 35px;
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 25px auto;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
-.address-card p {
+.shop-location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 45px rgba(59, 130, 246, 0.2);
+}
+
+.location-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px;
+    background: linear-gradient(135deg, #1a3e77, #0e2245);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.location-header i {
+    font-size: 1.8rem;
+    color: #3b82f6;
+}
+
+.location-header h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+}
+
+.shop-address-image {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.location-details {
+    padding: 25px;
+    text-align: center;
+}
+
+.location-details p {
     margin-bottom: 15px;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.location-details p i {
+    color: #3b82f6;
+    width: 25px;
+}
+
+.map-small-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    padding: 10px 25px;
+    border-radius: 40px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.map-small-btn:hover {
+    transform: scale(1.02);
+    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
 }
 
 .map-container {
-    max-width: 800px;
-    margin: 0 auto;
     border-radius: 28px;
     overflow: hidden;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
-.map-btn {
-    display: inline-block;
-    background: linear-gradient(135deg, #2563eb, #1e40af);
-    padding: 12px 28px;
-    border-radius: 50px;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 15px;
-    transition: 0.3s;
-}
-
-.map-btn:hover {
-    transform: scale(1.02);
-    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .location-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .location-header i {
+        font-size: 1.4rem;
+    }
+    
+    .location-details {
+        padding: 18px;
+    }
+    
+    .location-details p {
+        font-size: 0.85rem;
+        gap: 6px;
+    }
+    
+    .shop-address-image {
+        max-height: 200px;
+    }
+    
+    .map-small-btn {
+        padding: 8px 18px;
+        font-size: 0.8rem;
+    }
 }
 
 /* ========== CONTACT BUTTONS ========== */

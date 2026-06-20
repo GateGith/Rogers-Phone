@@ -20,6 +20,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    backdrop-filter: blur(12px);
 }
 
 .logo-container {
@@ -33,6 +34,9 @@ body {
     width: 50px;
     height: 50px;
     object-fit: contain;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.05);
+    padding: 4px;
 }
 
 .logo-text {
@@ -111,6 +115,7 @@ body {
     padding: 12px 25px;
     border-radius: 40px;
     backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.05);
 }
 
 .hero-stats h3 {
@@ -222,6 +227,7 @@ h2 i {
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
     transition: 0.4s;
     transform-style: preserve-3d;
+    background: #14376b;
 }
 
 .gallery img:hover, .products-grid img:hover {
@@ -308,6 +314,7 @@ h2 i {
     object-fit: cover;
     border-radius: 20px;
     margin-bottom: 15px;
+    background: #1a3e77;
 }
 
 .accessory-icon {
@@ -354,6 +361,7 @@ h2 i {
     object-fit: cover;
     margin-bottom: 15px;
     border: 3px solid #3b82f6;
+    background: #1a3e77;
 }
 
 .stars {
@@ -442,6 +450,7 @@ h2 i {
     max-height: 320px;
     object-fit: cover;
     display: block;
+    background: #1a3e77;
 }
 
 .location-details {
@@ -488,35 +497,6 @@ h2 i {
     border-radius: 28px;
     overflow: hidden;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-}
-
-/* ========== RESPONSIVE ========== */
-@media (max-width: 768px) {
-    .location-header h3 {
-        font-size: 1.1rem;
-    }
-    
-    .location-header i {
-        font-size: 1.4rem;
-    }
-    
-    .location-details {
-        padding: 18px;
-    }
-    
-    .location-details p {
-        font-size: 0.85rem;
-        gap: 6px;
-    }
-    
-    .shop-address-image {
-        max-height: 200px;
-    }
-    
-    .map-small-btn {
-        padding: 8px 18px;
-        font-size: 0.8rem;
-    }
 }
 
 /* ========== CONTACT BUTTONS ========== */
@@ -604,6 +584,9 @@ footer {
     height: 60px;
     object-fit: contain;
     margin-bottom: 15px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.05);
+    padding: 4px;
 }
 
 .footer-content h3 {
@@ -724,7 +707,34 @@ footer {
         min-width: 160px;
         padding: 12px 18px;
     }
+
+    .location-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .location-header i {
+        font-size: 1.4rem;
+    }
+    
+    .location-details {
+        padding: 18px;
+    }
+    
+    .location-details p {
+        font-size: 0.85rem;
+        gap: 6px;
+    }
+    
+    .shop-address-image {
+        max-height: 200px;
+    }
+    
+    .map-small-btn {
+        padding: 8px 18px;
+        font-size: 0.8rem;
+    }
 }
+
 /* ========== SHOP IMAGE FULL ========== */
 .shop-image-container {
     max-width: 800px;
@@ -741,6 +751,7 @@ footer {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     border: 2px solid rgba(59, 130, 246, 0.3);
     transition: 0.4s;
+    background: #1a3e77;
 }
 
 .shop-full-image:hover {
